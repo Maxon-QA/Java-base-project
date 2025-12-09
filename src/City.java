@@ -5,7 +5,6 @@ import java.util.List;
 public class City {
     final String name;
     private final List<Path> paths = new ArrayList<>();
-    private static City currentCity;
 
     public City(String name, Path... path) {
         this.name = name;
@@ -23,16 +22,17 @@ public class City {
     }
 
     public City travelBy(int n) {
+
+        if (n == 0) {
+            return this;
+        }
+
         if (paths.isEmpty()) {
-            return currentCity = null;
+            return null;
         }
-        while (n > 0) {
-            n--;
-            currentCity = paths.get(0).toCity;
-            currentCity.travelBy(n);
-            break;
-        }
-        return currentCity;
+
+        City nextCity = paths.get(0).toCity;
+        return nextCity.travelBy(n - 1);
     }
 
     @Override

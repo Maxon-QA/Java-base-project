@@ -11,17 +11,7 @@ public class OopObject {
         City cityF = new City("city F", new Path(cityB, 1)
                 , new Path(cityE, 2));
 
-//        cityA.addPath(cityB, 5);
-//        cityA.addPath(cityF, 1);
-//        cityA.addPath(cityD, 6);
-//        cityB.addPath(cityC, 3);
-//        cityC.addPath(cityD, 4);
-//        cityD.addPath(cityE, 2);
-//        cityE.addPath(cityF, 2);
-
-        System.out.println(cityB.travelBy(1));
-        System.out.println(cityB.travelBy(2));
-        System.out.println(cityB.travelBy(3));
+        System.out.println(cityA.travelBy(1));
 
         cityA.addPath(cityB, 5);
         cityA.addPath(cityF, 1);
@@ -34,6 +24,7 @@ public class OopObject {
         System.out.println(cityB.travelBy(1));
         System.out.println(cityB.travelBy(2));
         System.out.println(cityB.travelBy(3));
+
 
 //
 //        Point point1 = new Point(1, 5);
