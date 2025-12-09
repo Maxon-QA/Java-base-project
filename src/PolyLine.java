@@ -1,28 +1,28 @@
 import java.util.Arrays;
 
 public class PolyLine {
-    int len;
-    Point[] pointsArray = new Point[len];
+    private final int len;
+    private final Point[] pointsArray;
 
     public PolyLine(Point... pointsArray) {
-        len = pointsArray.length;
         this.pointsArray = pointsArray;
+        this.len = pointsArray.length;
     }
 
     public double getLength() {
-        if (pointsArray.length <= 1) return 0;
+        if (len <= 1) return 0;
         double lenPoly = 0;
-        for (int i = 1; i < pointsArray.length; i++) {
+        for (int i = 1; i < len; i++) {
             lenPoly += new Line(pointsArray[i - 1], pointsArray[i]).getLength();
         }
         return lenPoly;
     }
 
     public Line[] getLineArray() {
-        int lenLineArray = (pointsArray.length == 0 ? 0 : pointsArray.length - 1);
+        int lenLineArray = (len == 0 ? 0 : len - 1);
         Line[] lineArray = new Line[lenLineArray];
 
-        for (int i = 1; i < pointsArray.length; i++) {
+        for (int i = 1; i < len; i++) {
             lineArray[i - 1] = new Line(pointsArray[i - 1], pointsArray[i]);
         }
         return lineArray;

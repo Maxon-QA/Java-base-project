@@ -1,7 +1,6 @@
 public class Line {
     Point pointFirst, pointSecond;
 
-
     public Line(Point pointFirst, Point pointSecond) {
         this.pointFirst = pointFirst;
         this.pointSecond = pointSecond;
@@ -15,7 +14,6 @@ public class Line {
         int x = pointFirst.x - pointSecond.x;
         int y = pointFirst.y - pointSecond.y;
         return Math.sqrt(x * x + y * y);
-
     }
 
     // Как так получилось???

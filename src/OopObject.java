@@ -4,7 +4,6 @@ public class OopObject {
 
     public static void main(String[] args) {
 
-
         Point point1 = new Point(1, 5);
         Point point2 = new Point(2, 8);
         Point point3 = new Point(5, 3);
@@ -47,6 +46,5 @@ public class OopObject {
         System.out.println("Измененная " + poly1);
         System.out.println("Длина измененной ломанной = " + poly1.getLength());
         System.out.println("Массив линий измененной ломанной = " + Arrays.deepToString(poly1.getLineArray()));
-
     }
 }
