@@ -1,4 +1,5 @@
 package OOP_2;
+
 import OOP_1.Point;
 
 public class Square {
