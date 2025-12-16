@@ -1,3 +1,5 @@
+package OOP_1;
+
 public class Path {
     final City toCity;
     private final int cost;

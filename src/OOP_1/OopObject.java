@@ -1,3 +1,5 @@
+package OOP_1;
+
 public class OopObject {
 
     public static void main(String[] args) {
@@ -27,15 +29,15 @@ public class OopObject {
 
 
 //
-//        Point point1 = new Point(1, 5);
-//        Point point2 = new Point(2, 8);
-//        Point point3 = new Point(5, 3);
-//        Point point4 = new Point(8, 9);
+//        OOP_1.Point point1 = new OOP_1.Point(1, 5);
+//        OOP_1.Point point2 = new OOP_1.Point(2, 8);
+//        OOP_1.Point point3 = new OOP_1.Point(5, 3);
+//        OOP_1.Point point4 = new OOP_1.Point(8, 9);
 //
 //        //1 Создать Ломаную, проходящую через точки {1;5}, {2;8}, {5;3}, {8,9}
-//        PolyLine poly1 = new PolyLine(point1, point2, point3, point4);
-//        PolyLine poly2 = new PolyLine(point1);
-//        PolyLine poly3 = new PolyLine();
+//        OOP_1.PolyLine poly1 = new OOP_1.PolyLine(point1, point2, point3, point4);
+//        OOP_1.PolyLine poly2 = new OOP_1.PolyLine(point1);
+//        OOP_1.PolyLine poly3 = new OOP_1.PolyLine();
 //
 //        //2 Рассчитать длину Ломаной
 //        System.out.println("Длина ломанной = " + poly1.getLength());

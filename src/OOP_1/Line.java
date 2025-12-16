@@ -1,3 +1,5 @@
+package OOP_1;
+
 public class Line {
     Point pointFirst, pointSecond;
 
