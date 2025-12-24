@@ -1,6 +1,8 @@
 package OOP_1;
 
-public class Line {
+import OOP_3.Measurable;
+
+public class Line implements Measurable {
     Point pointFirst, pointSecond;
 
     public Line(Point pointFirst, Point pointSecond) {

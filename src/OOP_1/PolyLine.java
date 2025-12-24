@@ -1,8 +1,9 @@
 package OOP_1;
 
+import OOP_3.Measurable;
 import java.util.Arrays;
 
-public class PolyLine {
+public class PolyLine implements Measurable {
     public final int len;
     public final Point[] pointsArray;
 
