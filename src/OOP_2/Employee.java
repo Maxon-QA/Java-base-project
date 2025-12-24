@@ -1,39 +1,40 @@
 package OOP_2;
 
-public class Employee{
-    private final String name;
+public class Employee {
+    private String name;
     private Department department;
 
     public Employee(String name, Department department) {
         this.name = name;
-        setDepartment(department);
-
+        setDepartment(department); // Используем сеттер для проверки
     }
 
-    private void setDepartment(Department department) {
-        this.department = new Department(department.getName(), department.getBoss());
-        if (department.getBoss() == null) {
-            department.setBoss(this);
-            System.out.println("Сотрудник " + name + " Автоматически назначен начальником отдела " + department.getName());
-        }
-
-    }
-
-    /*
-    Не получается сделать инкапсуляцию, так как:
-    1) Появляются ошибки, если сделать метод приватным
-    2) если возвращать новый объект
-     */
-    public Department getDepartment() {
-        return new Department(department.getName(), department.getBoss()) ;
-    }
-
-    public String getName () {
+    public String getName() {
         return name;
+    }
+
+    public Department getDepartment() {
+        return department != null ? new Department(department.getName()) : null;
+    }
+
+    public void setDepartment(Department department) {
+        if (department != null && department.getHead() != null && !department.getHead().equals(this)) {
+            throw new IllegalArgumentException("Начальник отдела должен быть сотрудником этого отдела");
+        }
+        this.department = department;
     }
 
     @Override
     public String toString() {
-        return name + " " + department.getName();
+        if (department == null || department.getHead() == null) {
+            return name; // Защита от null
+        }
+
+        if (this.equals(department.getHead())) {
+            return String.format("%s - начальник отдела %s", name, department.getName());
+        } else {
+            return String.format("%s работает в отделе %s, начальник которого %s",
+                    name, department.getName(), department.getHead().getName());
+        }
     }
 }

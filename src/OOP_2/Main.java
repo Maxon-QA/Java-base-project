@@ -4,26 +4,48 @@ public class Main {
     public static void main(String[] args) {
 
 
-        Department dep1 = new Department("qa");
-        Employee employee1 = new Employee("maks", dep1);
-        Employee employee2 = new Employee("roma", dep1);
 
-        Department dep2 = new Department("dev");
-        Employee employee3 = new Employee("igor", dep2);
-        Employee employee4 = new Employee("mich", dep2);
 
-        Department dep3 = new Department("analit");
 
-        dep1.setBoss(employee2);
 
-        System.out.println(dep1);
-        System.out.println(dep2);
-        //System.out.println(dep3);
 
-        System.out.println(employee1);
-        System.out.println(employee2);
-        System.out.println(employee3);
-        System.out.println(employee4);
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Сотрудники и департаменты
+//        Department dep1 = new Department("qa");
+//        Employee employee1 = new Employee("maks", dep1);
+//
+//
+//
+//        Employee employee2 = new Employee("roma", dep1);
+//
+//        Department dep2 = new Department("dev");
+//        Employee employee3 = new Employee("igor", dep2);
+//        Employee employee4 = new Employee("mich", dep2);
+//
+//        Department dep3 = new Department("analit");
+//
+////        dep1.setHead(employee2);
+//
+//        System.out.println(dep1);
+//        System.out.println(dep2);
+//        //System.out.println(dep3);
+//
+//        System.out.println(employee1);
+//        System.out.println(employee2);
+//        System.out.println(employee3);
+//        System.out.println(employee4);
 
 
 

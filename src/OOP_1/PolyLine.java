@@ -3,8 +3,8 @@ package OOP_1;
 import java.util.Arrays;
 
 public class PolyLine {
-    private final int len;
-    private final Point[] pointsArray;
+    public final int len;
+    public final Point[] pointsArray;
 
     public PolyLine(Point... pointsArray) {
         this.pointsArray = pointsArray;

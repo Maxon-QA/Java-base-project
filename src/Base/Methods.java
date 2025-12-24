@@ -1,3 +1,5 @@
+package Base;
+
 public class Methods {
     public static void main(String[] args) {
         /*double result = fraction(5.3);

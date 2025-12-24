@@ -1,3 +1,5 @@
+package Base;
+
 public class Сonditions {
     public static void main(String[] args) {
         //System.out.println(abs(-5));
