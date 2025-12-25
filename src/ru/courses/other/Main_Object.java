@@ -1,43 +1,43 @@
-package OOP_1;
+package ru.courses.other;
 
-public class OopObject {
+public class Main_Object {
 
     public static void main(String[] args) {
 
-        City cityA = new City("city A");
-        City cityB = new City("city B", new Path(cityA, 5));
-        City cityC = new City("city C", new Path(cityB, 3));
-        City cityD = new City("city D", new Path(cityC, 4)
-                , new Path(cityA, 6));
-        City cityE = new City("city E");
-        City cityF = new City("city F", new Path(cityB, 1)
-                , new Path(cityE, 2));
-
-        System.out.println(cityA.travelBy(1));
-
-        cityA.addPath(cityB, 5);
-        cityA.addPath(cityF, 1);
-        cityA.addPath(cityD, 6);
-        cityB.addPath(cityC, 3);
-        cityC.addPath(cityD, 4);
-        cityD.addPath(cityE, 2);
-        cityE.addPath(cityF, 2);
-
-        System.out.println(cityB.travelBy(1));
-        System.out.println(cityB.travelBy(2));
-        System.out.println(cityB.travelBy(3));
+//        City cityA = new City("city A");
+//        City cityB = new City("city B", new Path(cityA, 5));
+//        City cityC = new City("city C", new Path(cityB, 3));
+//        City cityD = new City("city D", new Path(cityC, 4)
+//                , new Path(cityA, 6));
+//        City cityE = new City("city E");
+//        City cityF = new City("city F", new Path(cityB, 1)
+//                , new Path(cityE, 2));
+//
+//        System.out.println(cityA.travelBy(1));
+//
+//        cityA.addPath(cityB, 5);
+//        cityA.addPath(cityF, 1);
+//        cityA.addPath(cityD, 6);
+//        cityB.addPath(cityC, 3);
+//        cityC.addPath(cityD, 4);
+//        cityD.addPath(cityE, 2);
+//        cityE.addPath(cityF, 2);
+//
+//        System.out.println(cityB.travelBy(1));
+//        System.out.println(cityB.travelBy(2));
+//        System.out.println(cityB.travelBy(3));
 
 
 //
-//        OOP_1.Point point1 = new OOP_1.Point(1, 5);
-//        OOP_1.Point point2 = new OOP_1.Point(2, 8);
-//        OOP_1.Point point3 = new OOP_1.Point(5, 3);
-//        OOP_1.Point point4 = new OOP_1.Point(8, 9);
+//        ru.courses.geometry.Point point1 = new ru.courses.geometry.Point(1, 5);
+//        ru.courses.geometry.Point point2 = new ru.courses.geometry.Point(2, 8);
+//        ru.courses.geometry.Point point3 = new ru.courses.geometry.Point(5, 3);
+//        ru.courses.geometry.Point point4 = new ru.courses.geometry.Point(8, 9);
 //
 //        //1 Создать Ломаную, проходящую через точки {1;5}, {2;8}, {5;3}, {8,9}
-//        OOP_1.PolyLine poly1 = new OOP_1.PolyLine(point1, point2, point3, point4);
-//        OOP_1.PolyLine poly2 = new OOP_1.PolyLine(point1);
-//        OOP_1.PolyLine poly3 = new OOP_1.PolyLine();
+//        ru.courses.geometry.PolyLine poly1 = new ru.courses.geometry.PolyLine(point1, point2, point3, point4);
+//        ru.courses.geometry.PolyLine poly2 = new ru.courses.geometry.PolyLine(point1);
+//        ru.courses.geometry.PolyLine poly3 = new ru.courses.geometry.PolyLine();
 //
 //        //2 Рассчитать длину Ломаной
 //        System.out.println("Длина ломанной = " + poly1.getLength());

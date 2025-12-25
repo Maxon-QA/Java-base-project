@@ -1,8 +1,4 @@
-package OOP_3;
-
-import OOP_1.Line;
-import OOP_1.Point;
-import OOP_1.PolyLine;
+package ru.courses.geometry;
 
 public class ClosedPolyLine extends PolyLine {
 

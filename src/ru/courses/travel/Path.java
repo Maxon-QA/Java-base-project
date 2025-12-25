@@ -1,4 +1,4 @@
-package OOP_1;
+package ru.courses.travel;
 
 public class Path {
     final City toCity;

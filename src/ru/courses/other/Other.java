@@ -1,4 +1,4 @@
-package OOP_3;
+package ru.courses.other;
 
 public class Other {
 

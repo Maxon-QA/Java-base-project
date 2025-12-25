@@ -1,4 +1,4 @@
-package OOP_1;
+package ru.courses.geometry;
 
 public class Point {
     public int x, y;

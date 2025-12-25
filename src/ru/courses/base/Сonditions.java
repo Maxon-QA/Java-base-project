@@ -1,4 +1,4 @@
-package Base;
+package ru.courses.base;
 
 public class Сonditions {
     public static void main(String[] args) {

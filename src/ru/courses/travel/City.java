@@ -1,4 +1,4 @@
-package OOP_1;
+package ru.courses.travel;
 
 import java.util.ArrayList;
 import java.util.Collections;

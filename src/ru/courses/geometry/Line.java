@@ -1,6 +1,4 @@
-package OOP_1;
-
-import OOP_3.Measurable;
+package ru.courses.geometry;
 
 public class Line implements Measurable {
     Point pointFirst, pointSecond;

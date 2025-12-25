@@ -1,6 +1,6 @@
-package OOP_2;
+package ru.courses.other;
 
-public class Main {
+public class Main_OOP2 {
     public static void main(String[] args) {
 
 

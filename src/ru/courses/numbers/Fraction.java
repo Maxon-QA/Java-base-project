@@ -1,4 +1,4 @@
-package OOP_2;
+package ru.courses.numbers;
 
 public class Fraction extends Number {
     private final int numerator;

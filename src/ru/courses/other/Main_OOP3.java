@@ -1,11 +1,10 @@
-package OOP_3;
+package ru.courses.other;
 
-import OOP_1.Point;
-import OOP_1.PolyLine;
-import OOP_2.Fraction;
-import static OOP_3.Other.sumAll;
+import ru.courses.numbers.Fraction;
 
-public class Main {
+import static ru.courses.other.Other.sumAll;
+
+public class Main_OOP3 {
     public static void main(String[] args) {
 
         Number fraction1 = new Fraction(3,5);

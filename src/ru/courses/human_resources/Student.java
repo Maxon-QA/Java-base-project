@@ -1,4 +1,4 @@
-package OOP_2;
+package ru.courses.human_resources;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -1,6 +1,4 @@
-package OOP_2;
-
-import OOP_1.Point;
+package ru.courses.geometry;
 
 public class Square {
     private int coordinatePointX, coordinatePointY, sideLength;

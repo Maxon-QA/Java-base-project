@@ -1,4 +1,4 @@
-package OOP_2;
+package ru.courses.human_resources;
 
 public class Employee {
     private String name;

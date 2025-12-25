@@ -1,4 +1,4 @@
-package Base;
+package ru.courses.base;
 
 public class Methods {
     public static void main(String[] args) {
