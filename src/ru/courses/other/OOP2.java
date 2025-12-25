@@ -1,7 +1,7 @@
 package ru.courses.other;
 
-public class Main_OOP2 {
-    public static void main(String[] args) {
+public class OOP2 {
+    public static void OOP2() {
 
 
 

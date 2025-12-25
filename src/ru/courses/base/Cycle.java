@@ -1,7 +1,7 @@
 package ru.courses.base;
 
 public class Cycle {
-    public static void main(String[] args) {
+    public static void Cycle() {
         //System.out.println(listNums(1));
         //System.out.println(reverseListNums(15));
         //System.out.println(chet(9));

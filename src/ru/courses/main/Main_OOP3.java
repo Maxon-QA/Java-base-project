@@ -1,4 +1,4 @@
-package ru.courses.other;
+package ru.courses.main;
 
 import ru.courses.numbers.Fraction;
 

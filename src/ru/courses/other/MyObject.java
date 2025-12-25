@@ -1,8 +1,8 @@
 package ru.courses.other;
 
-public class Main_Object {
+public class MyObject {
 
-    public static void main(String[] args) {
+    public static void MyObject() {
 
 //        City cityA = new City("city A");
 //        City cityB = new City("city B", new Path(cityA, 5));

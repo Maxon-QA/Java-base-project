@@ -1,7 +1,7 @@
 package ru.courses.base;
 
 public class Methods {
-    public static void main(String[] args) {
+    public static void Methods() {
         /*double result = fraction(5.3);
         System.out.format("%.3f", result);*/
         //System.out.println(sumLastNums(12371));

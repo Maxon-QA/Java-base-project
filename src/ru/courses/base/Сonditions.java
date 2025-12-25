@@ -1,7 +1,7 @@
 package ru.courses.base;
 
 public class Сonditions {
-    public static void main(String[] args) {
+    public static void Сonditions() {
         //System.out.println(abs(-5));
         //System.out.println(safeDiv(4, 0));
         //System.out.println(max(7, 1));

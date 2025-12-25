@@ -1,7 +1,7 @@
 package ru.courses.base;
 
 public class MyArrays {
-    public static void main(String[] args) {
+    public static void MyArrays() {
 
         //1
         int[] arr1 = {11, 22, 33, 44, 55, 66, 77};
