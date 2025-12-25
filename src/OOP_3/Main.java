@@ -1,23 +1,24 @@
 package OOP_3;
 
-import OOP_1.Point;
-import OOP_1.PolyLine;
-import OOP_2.Fraction;
-import static OOP_3.Other.sumAll;
+import static OOP_3.Other.myPow;
 
 public class Main {
     public static void main(String[] args) {
 
-        Number fraction1 = new Fraction(3,5);
-        System.out.println(sumAll(2, fraction1, 2.3));
+        System.out.println(myPow(args[0], args[1]));
+    }
 
-        Number fraction2 = new Fraction(49,12);
-        Number fraction3 = new Fraction(3,2);
-        System.out.println(sumAll(3.6, fraction2, 3, fraction3));
 
-        Number fraction4 = new Fraction(1,3);
-        System.out.println(sumAll(fraction4, 1));
-
+//Сложени дроби и чисел
+//        Number fraction1 = new Fraction(3,5);
+//        System.out.println(sumAll(2, fraction1, 2.3));
+//
+//        Number fraction2 = new Fraction(49,12);
+//        Number fraction3 = new Fraction(3,2);
+//        System.out.println(sumAll(3.6, fraction2, 3, fraction3));
+//
+//        Number fraction4 = new Fraction(1,3);
+//        System.out.println(sumAll(fraction4, 1));
 
 
 //Дробь это число
@@ -36,8 +37,6 @@ public class Main {
 //        System.out.println(f1.doubleValue());
 
 
-
-
 // Интерфейс измерения длины и замкнута ломанная
 //        Point point1 = new Point(1, 5);
 //        Point point2 = new Point(2, 8);
@@ -54,7 +53,6 @@ public class Main {
 //        Measurable.print(poly2, polyClosed1);
 
 
-
 //        3d Точка
 //        Point p1 = new Point(3,6);
 //        Point3D p2 = new Point3D(1,7,6);
@@ -63,5 +61,5 @@ public class Main {
 //        System.out.println(p2);
 //        System.out.println(p2.compare(p1));
 //        System.out.println(p2.compare(p2));
-    }
+
 }
