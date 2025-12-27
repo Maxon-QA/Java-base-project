@@ -1,5 +1,7 @@
 package OOP_3;
 
+import java.util.Arrays;
+
 import static java.lang.Integer.parseInt;
 import static java.lang.Math.pow;
 
@@ -11,6 +13,10 @@ public class Other {
             answer += differentNumbers[i].doubleValue();
         }
         return answer;
+    }
+
+    public static void print(Measurable... differentLines) {
+        System.out.println(Arrays.toString(differentLines));
     }
 
     public static double myPow(String str1, String str2) {

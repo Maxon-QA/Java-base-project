@@ -1,11 +1,24 @@
 package OOP_3;
 
-import static OOP_3.Other.myPow;
+import OOP_1.Point;
+import OOP_1.PolyLine;
 
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println(myPow(args[0], args[1]));
+// Интерфейс измерения длины и замкнута ломанная
+        Point point1 = new Point(1, 5);
+        Point point2 = new Point(2, 8);
+        Point point3 = new Point(5, 3);
+        Point point4 = new Point(8, 9);
+
+        ClosedPolyLine polyClosed1 = new ClosedPolyLine(point1, point2, point3);
+        System.out.println(polyClosed1.getLength());
+
+        PolyLine poly2 = new PolyLine(point1, point2, point3, point1);
+        System.out.println(poly2.getLength());
+
+        Other.print(poly2, polyClosed1);
     }
 
 
@@ -35,22 +48,6 @@ public class Main {
 //        System.out.println(f1.longValue());
 //        System.out.println(f1.floatValue());
 //        System.out.println(f1.doubleValue());
-
-
-// Интерфейс измерения длины и замкнута ломанная
-//        Point point1 = new Point(1, 5);
-//        Point point2 = new Point(2, 8);
-//        Point point3 = new Point(5, 3);
-//        Point point4 = new Point(8, 9);
-//
-//        ClosedPolyLine polyClosed1 = new ClosedPolyLine(point1, point2, point3);
-//        PolyLine poly2 = new PolyLine(point1, point2, point3, point1);
-//        System.out.println(polyClosed1.getLength());
-//        System.out.println(poly2.getLength());
-//
-//        System.out.println("----------------------------");
-//
-//        Measurable.print(poly2, polyClosed1);
 
 
 //        3d Точка
