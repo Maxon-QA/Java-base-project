@@ -1,7 +1,9 @@
 package OOP_1;
 
 import OOP_3.Measurable;
+
 import java.util.Arrays;
+import java.util.Objects;
 
 public class PolyLine implements Measurable {
     public final int len;
@@ -29,6 +31,20 @@ public class PolyLine implements Measurable {
             lineArray[i - 1] = new Line(pointsArray[i - 1], pointsArray[i]);
         }
         return lineArray;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if ((obj == null) || (getClass() != obj.getClass())) return false;
+        PolyLine polyLine = (PolyLine) obj;
+        return Arrays.equals(this.pointsArray, polyLine.pointsArray);
+
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(len, Arrays.hashCode(pointsArray));
     }
 
     @Override
