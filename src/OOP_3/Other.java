@@ -15,10 +15,6 @@ public class Other {
         return answer;
     }
 
-    public static void print(Measurable... differentLines) {
-        System.out.println(Arrays.toString(differentLines));
-    }
-
     public static double myPow(String str1, String str2) {
         double num1 = parseInt(str1);
         double num2 = parseInt(str2);
