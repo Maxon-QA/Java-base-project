@@ -1,13 +1,30 @@
 package OOP_4;
 
-import static OOP_4.Other.Operations.ADD;
-
 public class Main {
     public static void main(String[] args) {
 
-        Sauce sauce1 = new Sauce("шрирача", Hot.HOT);
-        System.out.println(sauce1);
+        System.out.println(Operations.MULT.result(2, 5));
+    }
 
-        System.out.println(ADD.result(2, 5));
+    enum Operations {
+        ADD {
+            public int result(int x, int y) {
+                return x + y;
+            }
+        }, SUB {
+            public int result(int x, int y) {
+                return x - y;
+            }
+        }, DIV {
+            public int result(int x, int y) {
+                return x / y;
+            }
+        }, MULT {
+            public int result(int x, int y) {
+                return x * y;
+            }
+        };
+
+        public abstract int result(int x, int y);
     }
 }

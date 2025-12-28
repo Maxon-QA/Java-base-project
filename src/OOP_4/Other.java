@@ -16,7 +16,7 @@ public class Other {
         return 0;
     }
 
-    enum Operations {
+    enum Operations22 {
         ADD {
             public int result(int x, int y) {
                 return x + y;
